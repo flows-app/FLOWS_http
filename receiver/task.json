@@ -1,0 +1,131 @@
+{
+  "id": "FLOWS/http/receiver",
+  "lambda": "lambda-arn",
+  "role": "iam-arn",
+  "input": {
+    "examples": {
+        "sample1": {
+          "resource": "/v1/{userid}/{flowid}/trigger",
+          "path": "/v1/user1/flow1/trigger",
+          "httpMethod": "POST",
+          "headers": {
+              "Accept": "*/*",
+              "CloudFront-Forwarded-Proto": "https",
+              "CloudFront-Is-Desktop-Viewer": "true",
+              "CloudFront-Is-Mobile-Viewer": "false",
+              "CloudFront-Is-SmartTV-Viewer": "false",
+              "CloudFront-Is-Tablet-Viewer": "false",
+              "CloudFront-Viewer-Country": "DE",
+              "content-type": "application/x-www-form-urlencoded",
+              "Host": "tk697d1h4c.execute-api.eu-west-1.amazonaws.com",
+              "User-Agent": "curl/7.54.0",
+              "Via": "2.0 a57d5819527c444e16b1875e3bd28970.cloudfront.net (CloudFront)",
+              "X-Amz-Cf-Id": "QE0bZ5ZcOHvdAJt-u2Nd9UDCW-qUTrx3MitZn6DS-pCn-qZEa6Orew==",
+              "X-Amzn-Trace-Id": "Root=1-5cbc6eb7-d129a1aaa3476c10edeb9328",
+              "X-Forwarded-For": "79.232.254.79, 70.132.42.148",
+              "X-Forwarded-Port": "443",
+              "X-Forwarded-Proto": "https"
+          },
+          "multiValueHeaders": {
+              "Accept": [
+                  "*/*"
+              ],
+              "CloudFront-Forwarded-Proto": [
+                  "https"
+              ],
+              "CloudFront-Is-Desktop-Viewer": [
+                  "true"
+              ],
+              "CloudFront-Is-Mobile-Viewer": [
+                  "false"
+              ],
+              "CloudFront-Is-SmartTV-Viewer": [
+                  "false"
+              ],
+              "CloudFront-Is-Tablet-Viewer": [
+                  "false"
+              ],
+              "CloudFront-Viewer-Country": [
+                  "DE"
+              ],
+              "content-type": [
+                  "application/x-www-form-urlencoded"
+              ],
+              "Host": [
+                  "tk697d1h4c.execute-api.eu-west-1.amazonaws.com"
+              ],
+              "User-Agent": [
+                  "curl/7.54.0"
+              ],
+              "Via": [
+                  "2.0 a57d5819527c444e16b1875e3bd28970.cloudfront.net (CloudFront)"
+              ],
+              "X-Amz-Cf-Id": [
+                  "QE0bZ5ZcOHvdAJt-u2Nd9UDCW-qUTrx3MitZn6DS-pCn-qZEa6Orew=="
+              ],
+              "X-Amzn-Trace-Id": [
+                  "Root=1-5cbc6eb7-d129a1aaa3476c10edeb9328"
+              ],
+              "X-Forwarded-For": [
+                  "79.232.254.79, 70.132.42.148"
+              ],
+              "X-Forwarded-Port": [
+                  "443"
+              ],
+              "X-Forwarded-Proto": [
+                  "https"
+              ]
+          },
+          "queryStringParameters": null,
+          "multiValueQueryStringParameters": null,
+          "pathParameters": {
+              "userid": "user1",
+              "flowid": "flow1"
+          },
+          "stageVariables": null,
+          "requestContext": {
+              "resourceId": "3qlstf",
+              "resourcePath": "/v1/{userid}/{flowid}/trigger",
+              "httpMethod": "POST",
+              "extendedRequestId": "YfY8tE11joEF7Zw=",
+              "requestTime": "21/Apr/2019:13:23:03 +0000",
+              "path": "/prod/v1/user1/flow1/trigger",
+              "accountId": "184705290838",
+              "protocol": "HTTP/1.1",
+              "stage": "prod",
+              "domainPrefix": "tk697d1h4c",
+              "requestTimeEpoch": 1555852983719,
+              "requestId": "97ad8c33-6438-11e9-b1d3-2b4a8b262109",
+              "identity": {
+                  "cognitoIdentityPoolId": null,
+                  "accountId": null,
+                  "cognitoIdentityId": null,
+                  "caller": null,
+                  "sourceIp": "79.232.254.79",
+                  "accessKey": null,
+                  "cognitoAuthenticationType": null,
+                  "cognitoAuthenticationProvider": null,
+                  "userArn": null,
+                  "userAgent": "curl/7.54.0",
+                  "user": null
+              },
+              "domainName": "tk697d1h4c.execute-api.eu-west-1.amazonaws.com",
+              "apiId": "tk697d1h4c"
+          },
+          "body": "{}",
+          "isBase64Encoded": false
+      }
+    }
+  },
+  "output": {
+      "examples": {
+          "result": {
+              "name": "value"
+          }
+      }
+  },
+  "type": "event",
+  "description": "receives an http request and processes all data synchronously",
+  "icon": "https://flows.app/favicon.png",
+  "billing": "standard"
+}
